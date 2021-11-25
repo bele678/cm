@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Markdown - </title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".."></a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">主目录</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../pycharm/" class="nav-link">PyCharm</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../py%E7%AC%94%E8%AE%B0/" class="nav-link">Py笔记</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/" class="nav-link">网盘</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../%E8%AF%BE%E5%A0%82%E9%87%8D%E7%82%B9/" class="nav-link">重点</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../%E9%9A%8F%E5%A0%82%E4%BD%9C%E4%B8%9A/" class="nav-link">作业</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../%E8%AF%BE%E5%A0%82%E9%87%8D%E7%82%B9/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#markdown" class="nav-link">Markdown</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#1" class="nav-link">1  嵌入视频</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#2-gif" class="nav-link">2  嵌入gif</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#3" class="nav-link">3  表格</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#4" class="nav-link">4  音频</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#5" class="nav-link">5  字体格式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#6" class="nav-link">6 分割线</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#7" class="nav-link">7 代码</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#8" class="nav-link">8 多层嵌套</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#9" class="nav-link">9 超链接</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="markdown">Markdown</h1>
+<h1 id="1"><strong>1  嵌入视频</strong></h1>
+<p><strong>效果：</strong></p>
+<video id="video" controls="" preload="none" poster="../images/test_mp4_.png">
+<source id="mp4" src="../images/test_mp4.mp4" type="video/mp4">
+</video>
+
+<p><strong>格式：</strong></p>
+<pre><code>&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;../images/test_mp4_.png&quot;&gt;
+&lt;source id=&quot;mp4&quot; src=&quot;../images/test_mp4.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+
+</code></pre>
+<h1 id="2-gif"><strong>2  嵌入gif</strong></h1>
+<p><strong>效果：</strong></p>
+<p><img alt="test_gif" src="../images/test_gif.gif" /></p>
+<p><strong>格式：</strong></p>
+<pre><code>![test_gif](images/test_gif.gif)
+</code></pre>
+<p><strong>效果：</strong></p>
+<p><img src="../images/test_gif.gif" width ="100" height="100"></img></p>
+<p><strong>格式：</strong></p>
+<pre><code>&lt;img src=&quot;../images/test_gif.gif&quot; width =&quot;100&quot; height=&quot;100&quot;&gt;&lt;/img&gt;
+</code></pre>
+<h1 id="3"><strong>3  表格</strong></h1>
+<p><strong>效果：</strong></p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一行</td>
+<td>第一行</td>
+<td>第一行</td>
+</tr>
+<tr>
+<td>第二行</td>
+<td>第二行</td>
+<td>第二行</td>
+</tr>
+<tr>
+<td>第三行</td>
+<td>第三行</td>
+<td>第三行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>格式：</strong></p>
+<pre><code>    |表头|表头|表头|
+    |----|----|----|
+    |第一行|第一行|第一行|
+    |第二行|第二行|第二行|
+    |第三行|第三行|第三行|
+
+</code></pre>
+<h1 id="4"><strong>4  音频</strong></h1>
+<p><strong>效果：</strong>
+<audio id="audio" controls="" preload="none" >
+<source id="mp3" src="../images/笑忘书-王菲.mp3">
+</audio></p>
+<p><strong>格式：</strong></p>
+<pre><code>&lt;audio id=&quot;audio&quot; controls=&quot;&quot; preload=&quot;none&quot; &gt;
+&lt;source id=&quot;mp3&quot; src=&quot;../images/笑忘书-王菲.mp3&quot;&gt;
+&lt;/audio&gt;
+
+</code></pre>
+<h1 id="5"><strong>5  字体格式</strong></h1>
+<p><strong>效果：</strong></p>
+<p><em>斜体</em></p>
+<p><strong>格式：</strong></p>
+<pre><code>*斜体*
+</code></pre>
+<p><strong>效果：</strong></p>
+<p><strong>粗体</strong></p>
+<p><strong>格式：</strong></p>
+<pre><code>**粗体**
+
+</code></pre>
+<p><strong>效果：</strong></p>
+<p><strong><em>斜体并加粗</em></strong></p>
+<p><strong>格式：</strong></p>
+<pre><code>***斜体并加粗***
+
+</code></pre>
+<p><strong>效果：</strong></p>
+<p><del> 我是被删除的 </del></p>
+<p><strong>格式：</strong></p>
+<pre><code>&lt;del&gt; 我是被删除的 &lt;/del&gt;
+</code></pre>
+<p><strong>效果：</strong></p>
+<p><font face="黑体"> 我是黑体字</font></p>
+<p><font face="微软雅黑"> 微软雅黑</font></p>
+<p><font face="STACAIYUN"> 华文彩云</font></p>
+<p><font color="red">红色字体</font></p>
+<p><font color="blue">蓝色字体</font></p>
+<table><tr><td bgcolor="yellow">背景色yellow</td></tr></table>
+
+<table><tr><td bgcolor="yellow"><font color="blue">背景色yellow,字体blue</font></td></tr></table>
+
+<p><strong>格式：</strong></p>
+<pre><code>&lt;font face=&quot;黑体&quot;&gt; 我是黑体字&lt;/font&gt;
+
+&lt;font face=&quot;微软雅黑&quot;&gt; 微软雅黑&lt;/font&gt;
+
+&lt;font face=&quot;STACAIYUN&quot;&gt; 华文彩云&lt;/font&gt;
+
+&lt;font color=&quot;red&quot;&gt;红色字体&lt;/font&gt;
+
+&lt;font color=&quot;blue&quot;&gt;蓝色字体&lt;/font&gt;
+
+
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;yellow&quot;&gt;背景色yellow&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;yellow&quot;&gt;&lt;font color=&quot;blue&quot;&gt;背景色yellow,字体blue&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+</code></pre>
+<h1 id="6"><strong>6 分割线</strong></h1>
+<p><strong>效果：</strong></p>
+<hr />
+<p><strong>格式：</strong></p>
+<pre><code>------
+</code></pre>
+<h1 id="7"><strong>7 代码</strong></h1>
+<p><strong>效果：</strong></p>
+<pre><code>def abc():
+    print(123)
+</code></pre>
+<p><strong>格式：</strong></p>
+<p><img alt="代码格式" src="../images/daima.png" /></p>
+<h1 id="8"><strong>8 多层嵌套</strong></h1>
+<p><strong>效果：</strong></p>
+<ul>
+<li>
+<p>1层</p>
+<ul>
+<li>1.1层<ul>
+<li>1.1.1层</li>
+<li>1.1.2层</li>
+</ul>
+</li>
+<li>1.2层</li>
+</ul>
+</li>
+<li>
+<p>2层</p>
+</li>
+</ul>
+<p><strong>格式：</strong></p>
+<pre><code>- 1层
+    - 1.1层
+        - 1.1.1层
+        - 1.1.2层
+    - 1.2层
+
+- 2层
+</code></pre>
+<h1 id="9"><strong>9 超链接</strong></h1>
+<p><strong>效果：</strong>
+<a href="https://www.baidu.com">百度一下</a></p>
+<p><strong>格式：</strong></p>
+<pre><code>[百度一下](https://www.baidu.com)
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
