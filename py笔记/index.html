@@ -456,6 +456,68 @@ input函数输入的数据，默认是字符串类型。</p>
 <p><img alt="type代码" src="../images/5_res/360%E6%88%AA%E5%9B%BE20211123105010982.png" /></p>
 <hr />
 <h1 id="6-file">6. file 文件读写</h1>
+<p><strong>1.文件名</strong></p>
+<p>文件名有<code>主文件名</code>和<code>扩展名</code>组成</p>
+<pre><code>例子：
+file.py
+file 是主文件名
+py 是扩展名
+</code></pre>
+<p><strong>2.文件全名</strong></p>
+<p>文件全名 有 <code>盘符</code>+<code>路径</code>+<code>主文件名</code>+<code>扩展名</code> 组成</p>
+<pre><code>例子：
+D:\其他文件\机械硬盘\desktop\file.py
+d: 是盘符
+\其他文件\机械硬盘\desktop\ 是路径，位置
+file.py 主文件名+扩展名
+</code></pre>
+<p><strong>3. 文件读写要求</strong></p>
+<pre><code>1.文件全名
+2.文件数据的编码方式
+#为了兼容性不同字符考虑，python编程时一般使用 utf-8 格式
+</code></pre>
+<p><strong>4. 文件读、写、追加写入</strong></p>
+<pre><code># 文件读写伪代码格式
+
+with open(文件全名，读写类型，文件编码方式) as f:
+    aa=f.read() # 如果是读用这个，读的结果存放到变量aa
+    f.write(some) # 如果是写到文件，用这个，把some变量内容写到文件。
+
+# 读
+with open("D:\\其他文件\\机械硬盘\\desktop\\test2.txt","r",encoding="utf-8") as f:
+    #print(f.read()) #加print函数才可以显示出来
+
+    a = f.read() # 把读的内容传递给变量
+
+# 写
+# 写文件测试
+with open("D:\\其他文件\\机械硬盘\\desktop\\test2.txt","w",encoding="utf-8") as f:
+    f.write("just test ~ ")
+
+
+
+"""
+# 追加写文件测试
+with open("D:\\其他文件\\机械硬盘\\desktop\\test2.txt","a",encoding="utf-8") as f:
+    f.write("\njust test 3~ ")
+    print("写入成功")
+</code></pre>
+<p><strong>5.作业</strong></p>
+<pre><code>作业1：
+    升级上节课程的“同学班级查询器”到第2版本， 使查询结果自动保存到 桌面的 log.txt 文件中。
+    每次查询保存到新的一行， 保存格式 学号----班级
+
+作业2：
+    继续升级“同学班级查询”到第3个版本，更名为“成绩查询器”
+    显示结果例子：
+        输入： 20210305
+        输出： 你是3班的，成绩是语文A+，数学A+，历史A+
+
+        log.txt 文件新增加内容： 20210305----03班----语文A+，数学A+，历史A+
+
+
+    思路参考： 建立一个有成绩的字典{}，查字典取成绩。直接用账号作为key,成绩结果以字符串格式做为value. (key 键， value 值；)
+</code></pre>
 <hr />
 <h1 id="7-while">7. while 循环</h1>
 <hr />
